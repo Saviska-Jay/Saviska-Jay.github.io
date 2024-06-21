@@ -1,0 +1,57 @@
+body {
+    background-color:black;
+    font-family: Arial;
+    color: rgb(185, 247, 208);
+    text-align: center;
+    font-weight: bold;
+
+}
+
+h1{
+    color:rgb(0, 108, 45);
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+
+.maindiv{
+    width: auto;
+    margin: 25px;
+    padding: 50px;
+    padding-top: 10px;
+    background-color: rgb(216, 233, 227);
+    color: black;
+    border: 3px solid rgb(26, 255, 0);
+    border-radius: 25px;
+    text-align: center;
+}
+
+button {
+    background-color: #04AA6D; 
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+button:hover{
+    background-color: #00ffa2; 
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:active{
+    background-color:#04AA6D; 
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+#result{
+    font-family:monospace;
+    font-weight: bolder;
+}
