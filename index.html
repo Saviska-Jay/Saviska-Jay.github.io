@@ -2,41 +2,309 @@
 <html>
 
 <head>
-    <title>Simple Interest Calculator</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- This is the page title -->
+    <title>Saviska Jayawickrama</title>
+
+    <!-- google Font Linking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+        
+    <!-- Linking the css file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Page Icon. -->
+    <link rel="icon" type="image/png" href="resources/heart_icon.png">
+
 </head>
 
 <body>
-    <div class="maindiv">
-        <h1>Simple Interest Calculator</h1>
-        <br>
-        Amount (LKR) : <input type="number" id="principal"> <br><br>
-        Rate : <input id="rate" type="range" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()"> 
-        <span id="rate_val">
-            10.25
-        </span>%<br><br>
-        No. of Years : <input type="number" id="years" list="all_years">
-        <datalist id="all_years">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </datalist> <br><br>
-        Interest : <span id="result"></span><br><br><br>
-        <button onclick="compute()">Compute Interest</button>
-        <span id="result"></span>
+
+    <!-- Top of the page -->
+    <div id="page_top">
+
+        <!-- Owner's container -->
+        <div class="owner_info_container">
+
+            <!-- Owner's Name -->
+            <div class="owner_name">
+                Saviska Jayawickrama
+            </div>
+
+            <!-- Owner's Contact Info -->
+            <div class="owner_contact_info">
+                <img src="resources/email_icon.png" alt="Email Icon"> Saviska.Jay@gmail.com
+            </div>
+            <div class="owner_contact_info">
+                <img src="resources/phone_icon.png" alt="Phone Icon">+94 75 56XX XXX
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div id="nav_bar_div">
+            <nav>
+                <a class="nav_bar_items" href="#projects">Projects |</a>
+                <a class="nav_bar_items" href="#skills">Skills |</a>
+                <a class="nav_bar_items" href="#about_me">About Me |</a>
+                <a class="nav_bar_items" href="#recommendations">Recommendations</a>
+            </nav>
+        </div>
     </div>
-    <br><br>
+
+    <!-- About me part of the page -->
+    <section id="about_me">
+        <div class="about_top">
+
+            <!-- Profile picture -->
+            <div>
+                <img src="resources/profile_pic.png" alt="Profile Picture" class="profile_pic">
+            </div>
+
+            <!-- Welcome Text  -->
+            <div class="welcome_text">
+                <h1> Hello! <img src="resources/wave_hand.gif" alt="Wave Hand GIF" class="hand"> I'm Saviska.</h1>
+            </div>
+        </div>
+
+        <!-- The About Paragraph -->
+        <div class="about_paragraph">
+            <p>
+                In 2021, I completed my Diplomas in Information Technology and English at Esoft Metro Campus. I am now
+                pursuing an HND in Computing, aspiring to become a software developer and full-stack developer.
+                <br><br>
+                With a solid foundation in IT and a passion for continuous learning, I am dedicated to achieving my
+                career goals in the tech industry. I am proficient in HTML5, CSS, JavaScript, C#, and Python, which
+                equips me to create dynamic and efficient solutions.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Skills part of the page  -->
+    <section id="skills">
+
+        <h2>My Skills...</h2>
+        <div style="clear:both;"></div>
+
+        <h3>Programming & Markup Languages That I Use...</h3>
+
+        <!-- Skills as Cards  -->
+        <div class="skills_cards">
+            <img src="resources/C_sharp_logo.png" alt="C# Logo" width="75px">
+            <h5>C#</h5>
+            <p>3 Years</p>
+        </div>
+
+        <div class="skills_cards">
+            <img src="resources/HTML5_logo.png" alt="HTML5 Logo" width="75px">
+            <h5>HTML5</h5>
+            <p>3 Years</p>
+        </div>
+
+        <div class="skills_cards">
+            <img src="resources/CSS3_logo.png" alt="CSS3 Logo" width="75px">
+            <h5>CSS3</h5>
+            <p>3 Years</p>
+        </div>
+
+        <div class="skills_cards">
+            <img src="resources/javascript_logo.png" alt="JavaScript Logo" width="75px">
+            <h5>JavaScript</h5>
+            <p>6 Months</p>
+        </div>
+
+        <div class="skills_cards">
+            <img src="resources/Python_logo.png" alt="Python Logo" width="75px">
+            <h5>Python</h5>
+            <p>3 Years</p>
+        </div>
+
+        <div class="skills_cards">
+            <img src="resources/MsSQL_logo.png" alt="MS SQL Logo" width="75px">
+            <h5>SQL</h5>
+            <p>3 Years</p>
+        </div>
+
+        <h3>IDEs and services That I Use...</h3>
+
+        <!-- Skills as Cards  -->
+        <div class="skills_cards">
+            <img src="resources/visual_studio_logo.png" alt="Visual Studio Logo" width="75px">
+            <h5>Visual Studio</h5>
+            <p>3 Years</p>
+        </div>
+
+        <div class="skills_cards">
+            <img src="resources/VS_code_logo.png" alt="VS Code Logo" width="75px">
+            <h5>Visual Studio Code</h5>
+            <p>1 Years</p>
+        </div>
+
+        <div class="skills_cards">
+            <img src="resources/Android_studio_logo.png" alt="Android Studio Logo" width="75px">
+            <h5>Android Studio</h5>
+            <p>1 Month</p>
+        </div>
+
+        <div class="skills_cards">
+            <img src="resources/GitHub_logo.png" alt="GitHub Logo" width="75px">
+            <h5>GitHub</h5>
+            <p>5 Months</p>
+        </div>
+
+        <div class="skills_cards">
+            <img src="resources/Amazon_Web_Services_Logo.png" alt="Amazon Web Services Logo" width="75px">
+            <h5>Amazon Web Services</h5>
+            <p>2 Months</p>
+        </div>
+
+    </section>
+
+    <!-- Projects part of the page. -->
+    <section id="projects">
+
+        <h2>My Projects...</h2>
+        <div style="clear:both;"></div>
+
+        <!-- projects as Cards -->
+        <div class="projects_cards">
+            <h3>A Database Solution For Quiet Attic Films</h3>
+            <p>Design and implement a database system with GUI.</p>
+            <p class="projects_languages">C# | SQL | Visual Studio</p>
+            <h5>Completed</h5>
+            <a href="https://github.com/Saviska-Jay/Database-Solution-for-Quiet-Attic-Films.git" target="_blank"><button
+                    class="projects_source_button">View Source Code</button></a>
+        </div>
+
+        <div class="projects_cards">
+            <h3>Grifindo Toys Payroll System</h3>
+            <p>Design & Implement a GUI based system for a company called "The Grifindo Toys". They wanted a simple
+                payroll system to calculate the salaries of their employees.</p>
+            <p class="projects_languages">C# | SQL | Visual Studio</p>
+            <h5>Completed</h5>
+            <a href="https://github.com/Saviska-Jay/Grifindo_Toys_Payroll_System.git" target="_blank"><button
+                    class="projects_source_button">View Source Code</button></a>
+        </div>
+
+        <div class="projects_cards">
+            <h3> Grocery Store Management System</h3>
+            <p>A Grocery store management system with basic functionalities using C# .NET framework.</p>
+            <p class="projects_languages">C# | SQL | Visual Studio</p>
+            <h5>In Development</h5>
+            <a href="https://github.com/Saviska-Jay/Grocery-Store-Management-System-01.git" target="_blank"><button
+                    class="projects_source_button">View Source Code</button></a>
+        </div>
+
+        <div class="projects_cards">
+            <h3>Simple Text Analyzer</h3>
+            <p>A Simple Text Analyzer Program Built Using Python.</p>
+            <p class="projects_languages">Python</p>
+            <h5>Completed</h5>
+            <a href="https://github.com/Saviska-Jay/Text-Analyzer-Python.git" target="_blank"><button
+                    class="projects_source_button">View Source Code</button></a>
+        </div>
+
+        <div class="projects_cards">
+            <h3>Starter Web Page for Collecting Emails for Dream Catch Videography</h3>
+            <p>A subscription form to collect emails from users for a company called Dream Catch Videography. Also used
+                MailChimp as a third-party plugin.</p>
+            <p class="projects_languages">HTML5 | CSS3 | Visual Studio Code</p>
+            <h5>Completed</h5>
+            <a href="https://saviska-jay.github.io/Dream%20Catch%20Videography/index.html" target="_blank"><button
+                    class="projects_view_button">Visit The Web Page</button></a>
+            <a href="https://github.com/Saviska-Jay/Saviska-Jay.github.io/tree/main/Dream%20Catch%20Videography"
+                target="_blank"><button class="projects_source_button">View Source Code</button></a>
+        </div>
+
+        <div class="projects_cards">
+            <h3>A customizable responsive web template</h3>
+            <p>A simple, customizable, responsive web template for future use.</p>
+            <p class="projects_languages">HTML5 | CSS3 | Visual Studio Code</p>
+            <h5>Completed</h5>
+            <a href="https://saviska-jay.github.io/My%20Custom%20Web%20Templates/index.html" target="_blank"><button
+                    class="projects_view_button">Visit The Web Page</button></a>
+            <a href="https://github.com/Saviska-Jay/Saviska-Jay.github.io/tree/main/My%20Custom%20Web%20Templates"
+                target="_blank"><button class="projects_source_button">View Source Code</button></a>
+        </div>
+
+        <div class="projects_cards">
+            <h3>A portfolio website </h3>
+            <p> A website that showcases my qualifications and work samples.</p>
+            <p class="projects_languages">HTML5 | CSS3 |Visual Studio Code</p>
+            <h5>Completed</h5>
+            <a href="https://saviska-jay.github.io/" target="_blank"><button class="projects_view_button">Visit The Web
+                    Page</button></a>
+            <a href="https://github.com/Saviska-Jay" target="_blank"><button class="projects_source_button">View Source
+                    Code</button></a>
+        </div>
+
+    </section>
+
+    <!-- Recommendations part of the page. -->
+    <section id="recommendations">
+
+        <h2>Recommendations...</h2>
+        <div style="clear:both;"></div>
+
+        <!-- Recommendations as cards. -->
+        <div class="recommendations_card">
+            <p class="recommendations_text"><span>“ </span>Sample Recommendations Sample Recommendations Sample
+                Recommendations Sample
+                Recommendations Sample Recommendations Sample Recommendations Sample Recommendations Sample
+                Recommendations Sample Recommendations Sample Recommendations Sample Recommendations Sample<span>
+                    ”</span></p>
+            <p class="recommendations_by">~Someone</p>
+        </div>
+
+        <div class="recommendations_card">
+            <p class="recommendations_text"><span>“ </span>Sample Recommendations Sample Recommendations Sample
+                Recommendations Sample
+                Recommendations Sample Recommendations Sample Recommendations Sample Recommendations Sample
+                Recommendations Sample Recommendations Sample Recommendations Sample Recommendations Sample<span>
+                    ”</span></p>
+            <p class="recommendations_by">~Someone</p>
+        </div>
+
+    </section>
+
+    <!-- Social Media part of the page. -->
+    <section class="social_media">
+
+        <h2>Connect with me via...</h2>
+        <div style="clear:both;"></div>
+
+        <a href="https://github.com/Saviska-Jay" target="_blank"><img src="resources/GitHub_logo.png" alt="GitHub Logo"
+                width="90px"></a>
+        <a href="https://www.linkedin.com/in/saviska-jayawickrama/" target="_blank"><img
+                src="resources/linkedIn_logo.png" alt="LinkedIn" width="90px"></a>
+        <a href="https://www.instagram.com/saviska.jay/" target="_blank"><img src="resources/instagram_logo.png"
+                alt="Instagram Logo" width="90px"></a>
+
+    </section>
+
+    <div>
+        <a href="#page_top">
+            <img class="up_icon" src="resources/Up_Arrow_icon.png" alt="Up Arrow Icon">
+        </a>
+    </div>
+
+    <!-- Footer part of the page. -->
     <footer>
-        © Saviska Jayawickrama - 2024
+        <p class="footer_text">
+            © Saviska Jayawickrama - 2024
+            <br>
+            Made with ❤️
+        </p>
     </footer>
+
 </body>
 
 </html>

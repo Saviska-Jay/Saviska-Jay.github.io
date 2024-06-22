@@ -1,57 +1,205 @@
+/* Base Styles for the page. */
+html {
+    font-family: "Marcellus", serif;
+    font-size: 1em;
+    font-weight: 400;
+    background-color: #f2f0ef;
+}
+
+/* Base Styles for the page. */
 body {
-    background-color:black;
-    font-family: Arial;
-    color: rgb(185, 247, 208);
-    text-align: center;
-    font-weight: bold;
-
+    margin: 0 auto;
 }
 
-h1{
-    color:rgb(0, 108, 45);
-    font-family: Verdana;
-    font-weight: bold;
-}
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
 
-
-.maindiv{
-    width: auto;
-    margin: 25px;
-    padding: 50px;
-    padding-top: 10px;
-    background-color: rgb(216, 233, 227);
-    color: black;
-    border: 3px solid rgb(26, 255, 0);
-    border-radius: 25px;
-    text-align: center;
-}
-
-button {
-    background-color: #04AA6D; 
-    border: none;
-    border-radius: 25px;
+/* Top of the page. */
+#page_top {
+    font-family: "Montserrat", sans-serif;
+    background-color: #11698E;
     color: white;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 15px;
-    font-weight: bold;
-  }
+    margin: 0 auto;
+    margin-bottom: 5%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    box-shadow:0px 0px 8px rgb(0, 0, 0);
+    text-shadow: 0px 2px 5px rgb(0, 0, 0);
+}
 
-button:hover{
-    background-color: #00ffa2; 
-    color: rgb(0, 0, 0);
-    font-size: 17px;
+#page_top:hover {
+    background-color: #005d7c;
+
+}
+
+/* Owner's container */
+.owner_info_container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Owner's Name  */
+.owner_name {
+    font-size: 2em;
+    padding-bottom: 4%;
+}
+
+/* Owner's Contact Info */
+.owner_contact_info {
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center; 
+    font-size: 1em;
+}
+
+.owner_contact_info img {
+    width: 30px;
+    margin-right: 1%;
+    padding-right: 5px;
+}
+
+/* Navigation Bar */
+#nav_bar_div {
+    margin-left: auto;
+    font-size: 1.25em;
+}
+
+.nav_bar_items {
+    color: rgb(255, 248, 201);
+    margin: 1%;
+    text-decoration: none;
+    float: right;
+    padding: 1%;
+}
+
+.nav_bar_items:hover{
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px rgb(121, 215, 255);
     cursor: pointer;
 }
 
-button:active{
-    background-color:#04AA6D; 
-    color: rgb(255, 255, 255);
-    font-size: 15px;
+/* Top of the page - Mobile View */
+@media only screen and (max-width:500px) {
+    .owner_name {
+        font-size: 1em;
+    }
+    .owner_contact_info {
+        font-size: 0.70em;
+    }
+    .owner_contact_info img {
+        width: 15px;
+    }
+    #nav_bar_div {
+        font-size: 0.85em;
+    }
 }
 
-#result{
-    font-family:monospace;
-    font-weight: bolder;
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
+/* About me part of the page */
+#about_me{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    box-shadow:0px 0px 15px rgb(0, 0, 0);
+    padding: 5%;
+    background-color: #F8F1F1;
+    border-radius: 1em;
+}
+
+
+
+.about_top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%; 
+}
+
+.profile_pic{
+    width: 300px;  
+    height: auto; 
+    vertical-align: middle;
+    margin-right: 30px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px #16C79A;
+}
+
+.welcome_text{
+    font-size: 300%;
+    font-family: "Marcellus", serif;
+    text-shadow: 0px 0px 4px #16C79A;
+}
+
+.hand{
+    width: 100px;  
+    height: auto; 
+    vertical-align: middle;
+}
+
+.about_paragraph{
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+/* About Me - Mobile View */
+@media only screen and (max-width:750px) {
+    .about_top {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+    }
+    .profile_pic {
+        width: 50%;
+
+    }
+    .welcome_text{
+        font-size: 1em;
+        margin-right: 0;
+        text-align: center;
+    }
+    .hand{
+        width: 40px;  
+    }
+    .about_paragraph {
+        font-size: 1em;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Up Arrow Icon  */
+.up_icon{
+    display: flex;
+    position: fixed;
+    width: 20px;
+    background-color: #245f73c4;
+    border: 10px solid #245f7352;
+    border-radius: 100%;
+    right: 3%;
+    bottom: 3%;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0);
+}
+
+.up_icon:hover{
+    width: 23px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0);
+}
+
+.up_icon:active{
+    width: 20px;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0);
 }
