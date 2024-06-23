@@ -76,13 +76,13 @@ body {
 }
 
 /* Top of the page - Mobile View */
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:750px) {
     .owner_name {
         font-size: 1em;
     }
 
     .owner_contact_info {
-        font-size: 1.5em;
+        font-size: 0.70em;
     }
 
     .owner_contact_info img {
@@ -90,7 +90,7 @@ body {
     }
 
     #nav_bar_div {
-        font-size: 1.6em;
+        font-size: 0.85em;
     }
 }
 
@@ -135,7 +135,7 @@ body {
 }
 
 /* About Me - Mobile View */
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:750px) {
     .about_top {
         display: flex;
         flex-direction: column;
@@ -177,7 +177,7 @@ h2 {
 /* Skills Cards */
 .grid_container{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
     grid-gap: 20px;
 }
 .skills_cards{
