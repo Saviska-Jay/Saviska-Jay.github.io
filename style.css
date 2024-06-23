@@ -15,9 +15,9 @@ body {
 /* Top of the page. */
 #page_top {
     font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     background-color: #507DBC;
     background: -webkit-linear-gradient(top, #649be7 0%, #507dbc 44%, #3e6090 100%);
-    /* Chrome10+,Safari5.1+ */
     color: white;
     margin: 0 auto;
     margin-bottom: 5%;
@@ -62,7 +62,7 @@ body {
 }
 
 .nav_bar_items {
-    color: rgb(255, 248, 201);
+    color: rgb(255, 255, 155);
     margin: 1%;
     text-decoration: none;
     float: right;
@@ -181,7 +181,7 @@ h2 {
     grid-gap: 20px;
 }
 .skills_cards{
-    background-color: #BBD1EA;
+    background-color: #eaf4ff;
     padding: 2%;
     margin: 5%;
     text-align: center;
@@ -189,6 +189,7 @@ h2 {
 }
 
 .skills_cards:hover{
+    background-color: #f2f8ff;
     box-shadow: 0px 0px 15px #11223e;
 }
 
