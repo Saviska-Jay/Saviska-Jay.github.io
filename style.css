@@ -76,13 +76,13 @@ body {
 }
 
 /* Top of the page - Mobile View */
-@media only screen and (max-width:750px) {
+@media only screen and (max-width:1000px) {
     .owner_name {
         font-size: 1em;
     }
 
     .owner_contact_info {
-        font-size: 0.70em;
+        font-size: 1.5em;
     }
 
     .owner_contact_info img {
@@ -90,7 +90,7 @@ body {
     }
 
     #nav_bar_div {
-        font-size: 0.85em;
+        font-size: 1.6em;
     }
 }
 
@@ -135,7 +135,7 @@ body {
 }
 
 /* About Me - Mobile View */
-@media only screen and (max-width:750px) {
+@media only screen and (max-width:1000px) {
     .about_top {
         display: flex;
         flex-direction: column;
