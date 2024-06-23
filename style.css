@@ -1,14 +1,29 @@
 /* Base Styles for the page. */
 html {
     font-family: "Marcellus", serif;
-    font-size: 1.25em;
-    background-color: #dae3e5;
+    background-color: #ffffff;
 }
 
 /* Base Styles for the page. */
 body {
     margin: 0 auto;
+
 }
+
+/* All text */
+h2 {
+    font-size: 3em;
+    text-shadow: 0px 0px 4px #73b4ff;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+p{
+    font-size: 1.1em;
+}
+
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -20,7 +35,7 @@ body {
     background: -webkit-linear-gradient(top, #649be7 0%, #507dbc 44%, #3e6090 100%);
     color: white;
     margin: 0 auto;
-    margin-bottom: 5%;
+    margin-bottom: 3em;
     padding: 2%;
     display: flex;
     align-items: center;
@@ -75,43 +90,45 @@ body {
     cursor: pointer;
 }
 
-
-
 /* ///////////////////////////////////////////////////////////////////////////////////////////// */
+
 /* About me part of the page */
 #about_me {
     display: flex;
     flex-direction: column;
-    padding: 5%;
-    padding-top: 0%;
+    padding-left: 3em;
+    padding-right: 3em;
 }
-
 .about_top {
     display: flex;
     align-items: center;
     margin-bottom: 2%;
 }
 
+/* Profile Pic. */
 .profile_pic {
     width: 300px;
     height: auto;
     vertical-align: middle;
     margin-right: 30px;
     border-radius: 100%;
-    box-shadow: 0px 0px 10px #73b4ff;
+    box-shadow: 0px 0px 20px#3e6090 ;
 }
 
+/* Welcome Text. */
 .welcome_text {
     font-size: 300%;
-    text-shadow: 0px 0px 4px #73b4ff;
+    text-shadow: 0px 0px 10px#4cc0ff ;
 }
 
+/* Wave Hand. */
 .hand {
     width: 100px;
     height: auto;
     vertical-align: middle;
 }
 
+/* About me paragraph */
 .about_paragraph {
     font-size: 1.25em;
     font-weight: 500;
@@ -119,14 +136,12 @@ body {
 
 
 /* ////////////////////////////////////////////////////////////////////////// */
+
 /* Skills Part of the page. */
 #skills {
-    padding: 5%;
-}
-
-/* My skills tittle */
-h2 {
-    text-shadow: 0px 0px 4px #73b4ff;
+    padding-top: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 /* Skills Cards */
@@ -142,23 +157,84 @@ h2 {
     text-align: center;
     border-radius: 1em;
 }
-
 .skills_cards:hover{
-    background-color: #f2f8ff;
+    background-color: #ffffff;
     box-shadow: 0px 0px 15px #11223e;
 }
-
 .skills_cards img{
     width: 100px;
 }
+.skills_cards h5{
+    font-size: 1.2em;
+    text-shadow: 0px 0px 5px#4cc0ff ;
+    color: #00296a;
+}
 
 
+/* ////////////////////////////////////////////////////////////////////////// */
 
+/* Projects Part of the page. */
+#projects {
+    padding-top: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
 
+/* Projects Cards. */
+.poject_grid{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 25px;
+}
+.projects_cards{
+    background-color: #eaf4ff;
+    padding: 1em;
+    border-radius: 1em;
+}
+.projects_cards:hover{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px #11223e;
+}
+.projects_cards h3{
+    color: #002155;
+    text-decoration: underline;
+    text-shadow: 0px 0px 5px#baf1ff ;
 
+}
+.projects_cards h5{
+    color: #009619;
+    font-family: monospace;
+    font-size: large;
+}
+.projects_cards .in_development {
+    color: #cb5800;
+}
+.projects_cards .projects_source_button{
+    text-align: center;
+}
 
+/* Projects Buttons */
+.projects_button{
+    display: inline-flex;
+    border:none;
+    margin-right: 1em;
+    background-color: rgb(0, 96, 192);
+    font-family: "Marcellus", serif;
+    font-size: 1em;
+    color: white;
+    padding: 1em;
+    border-radius: 2em;
+    box-shadow: 0px 0px 10px #11223e;
+}
 
-
+.projects_button:hover{
+    background-color: rgb(49, 152, 255);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #93bdff;
+}
+.projects_button:active{
+    background-color: rgb(0, 78, 155);
+}
 
 
 
