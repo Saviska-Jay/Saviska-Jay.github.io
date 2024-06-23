@@ -1,9 +1,8 @@
 /* Base Styles for the page. */
 html {
     font-family: "Marcellus", serif;
-    font-size: 1em;
-    font-weight: 400;
-    background-color: #f2f0ef;
+    font-size: 1.25em;
+    background-color: #dae3e5;
 }
 
 /* Base Styles for the page. */
@@ -15,22 +14,18 @@ body {
 
 /* Top of the page. */
 #page_top {
-    font-size: 1.25em;
     font-family: "Montserrat", sans-serif;
-    background-color: #11698E;
+    background-color: #507DBC;
+    background: -webkit-linear-gradient(top, #649be7 0%, #507dbc 44%, #3e6090 100%);
+    /* Chrome10+,Safari5.1+ */
     color: white;
     margin: 0 auto;
     margin-bottom: 5%;
     padding: 2%;
     display: flex;
     align-items: center;
-    box-shadow:0px 0px 8px rgb(0, 0, 0);
+    box-shadow: 0px 0px 8px rgb(0, 0, 0);
     text-shadow: 0px 2px 5px rgb(0, 0, 0);
-}
-
-#page_top:hover {
-    background-color: #005d7c;
-
 }
 
 /* Owner's container */
@@ -43,13 +38,14 @@ body {
 .owner_name {
     font-size: 2em;
     padding-bottom: 4%;
+    padding-right: 25px;
 }
 
 /* Owner's Contact Info */
 .owner_contact_info {
     padding-bottom: 2%;
     display: flex;
-    align-items: center; 
+    align-items: center;
     font-size: 1em;
 }
 
@@ -73,23 +69,26 @@ body {
     padding: 1%;
 }
 
-.nav_bar_items:hover{
+.nav_bar_items:hover {
     text-decoration: underline;
     text-shadow: 2px 2px 5px rgb(121, 215, 255);
     cursor: pointer;
 }
 
 /* Top of the page - Mobile View */
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:750px) {
     .owner_name {
         font-size: 1em;
     }
+
     .owner_contact_info {
         font-size: 0.70em;
     }
+
     .owner_contact_info img {
         width: 15px;
     }
+
     #nav_bar_div {
         font-size: 0.85em;
     }
@@ -97,46 +96,40 @@ body {
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////// */
 /* About me part of the page */
-#about_me{
+#about_me {
     display: flex;
     flex-direction: column;
-    margin: 5%;
-    box-shadow:0px 0px 15px rgb(0, 0, 0);
     padding: 5%;
-    background-color: #F8F1F1;
-    border-radius: 1em;
+    padding-top: 0%;
 }
-
-
 
 .about_top {
     display: flex;
     align-items: center;
-    margin-bottom: 2%; 
+    margin-bottom: 2%;
 }
 
-.profile_pic{
-    width: 300px;  
-    height: auto; 
+.profile_pic {
+    width: 300px;
+    height: auto;
     vertical-align: middle;
     margin-right: 30px;
     border-radius: 100%;
-    box-shadow: 0px 0px 10px #16C79A;
+    box-shadow: 0px 0px 10px #73b4ff;
 }
 
-.welcome_text{
+.welcome_text {
     font-size: 300%;
-    font-family: "Marcellus", serif;
-    text-shadow: 0px 0px 4px #16C79A;
+    text-shadow: 0px 0px 4px #73b4ff;
 }
 
-.hand{
-    width: 100px;  
-    height: auto; 
+.hand {
+    width: 100px;
+    height: auto;
     vertical-align: middle;
 }
 
-.about_paragraph{
+.about_paragraph {
     font-size: 1.25em;
     font-weight: 500;
 }
@@ -146,26 +139,69 @@ body {
     .about_top {
         display: flex;
         flex-direction: column;
-        align-items: center; 
-        text-align: center; 
+        align-items: center;
+        text-align: center;
     }
+
     .profile_pic {
         width: 50%;
 
     }
-    .welcome_text{
+
+    .welcome_text {
         font-size: 1em;
         margin-right: 0;
         text-align: center;
     }
-    .hand{
-        width: 40px;  
+
+    .hand {
+        width: 40px;
     }
+
     .about_paragraph {
         font-size: 1em;
     }
-} 
+}
 
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Skills Part of the page. */
+#skills {
+    padding: 5%;
+}
+
+/* My skills tittle */
+h2 {
+    text-shadow: 0px 0px 4px #73b4ff;
+}
+
+/* Skills Cards */
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-gap: 20px;
+}
+.skills_cards{
+    background-color: #BBD1EA;
+    padding: 2%;
+    margin: 5%;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.skills_cards:hover{
+    box-shadow: 0px 0px 15px #11223e;
+}
+
+.skills_cards img{
+    width: 100px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h5{
+    font-size: 1.1em;
+}
 
 
 
@@ -182,7 +218,7 @@ body {
 
 
 /* Up Arrow Icon  */
-.up_icon{
+.up_icon {
     display: flex;
     position: fixed;
     width: 20px;
@@ -194,13 +230,13 @@ body {
     box-shadow: 0px 2px 5px rgb(0, 0, 0);
 }
 
-.up_icon:hover{
+.up_icon:hover {
     width: 23px;
     cursor: pointer;
     box-shadow: 0px 2px 5px rgb(0, 0, 0);
 }
 
-.up_icon:active{
+.up_icon:active {
     width: 20px;
-    box-shadow: 0px 2px 5px rgb(0, 0, 0);
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);
 }
