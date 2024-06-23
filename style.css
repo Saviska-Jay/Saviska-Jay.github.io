@@ -76,7 +76,7 @@ body {
 }
 
 /* Top of the page - Mobile View */
-@media only screen and (max-width:750px) {
+@media only screen and (max-width:360px) {
     .owner_name {
         font-size: 1em;
     }
@@ -135,7 +135,7 @@ body {
 }
 
 /* About Me - Mobile View */
-@media only screen and (max-width:750px) {
+@media only screen and (max-width:360px) {
     .about_top {
         display: flex;
         flex-direction: column;
@@ -195,6 +195,12 @@ h2 {
 
 .skills_cards img{
     width: 100px;
+}
+
+@media only screen and (max-width:360px) {
+    .skills_cards h5{
+        font-size: 0.75em;
+    }
 }
 
 
