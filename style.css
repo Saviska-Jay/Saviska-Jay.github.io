@@ -103,6 +103,8 @@ p{
     display: flex;
     align-items: center;
     margin-bottom: 2%;
+
+    justify-content: center;
 }
 
 /* Profile Pic. */
@@ -166,10 +168,7 @@ p{
 }
 .skills_cards h5{
     font-size: 1.2em;
-    text-shadow: 0px 0px 5px#4cc0ff ;
-    color: #00296a;
 }
-
 
 /* ////////////////////////////////////////////////////////////////////////// */
 
@@ -198,8 +197,6 @@ p{
 .projects_cards h3{
     color: #002155;
     text-decoration: underline;
-    text-shadow: 0px 0px 5px#baf1ff ;
-
 }
 .projects_cards h5{
     color: #009619;
@@ -236,35 +233,86 @@ p{
     background-color: rgb(0, 78, 155);
 }
 
+/* ////////////////////////////////////////////////////////////////////////// */
 
+/* Recommendations Part of the page. */
+#recommendations{
+    padding-top: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
 
+.recommendations_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    grid-gap: 25px;
+}
+.recommendations_card{
+    background-color: #eaf4ff;
+    padding: 2em;
+    border-radius: 1em;
+    font-style: italic;
+}
 
+/* ///////////////////////////////////////////////////////////////////////////////////// */
 
+/* Social Media. */
+.social_media {
+    padding-top: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
 
+}
+.all_social_icon {
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    transition: transform 0.3s ease;
+ 
+}
+.social_icon {
+    width: 100px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.social_icon:hover {
+    transform: scale(1.15); 
+}
 
-
+/* ///////////////////////////////////////////////////////////////////////////// */
 
 /* Up Arrow Icon  */
 .up_icon {
     display: flex;
     position: fixed;
-    width: 20px;
+    width: 2em;
     background-color: #245f73c4;
     border: 10px solid #245f7352;
     border-radius: 100%;
     right: 3%;
     bottom: 3%;
     box-shadow: 0px 2px 5px rgb(0, 0, 0);
+    transition: transform 0.3s ease;
 }
-
 .up_icon:hover {
-    width: 23px;
+    transform: scale(1.15);
     cursor: pointer;
     box-shadow: 0px 2px 5px rgb(0, 0, 0);
 }
-
 .up_icon:active {
-    width: 20px;
+    transform: scale(0.75);
     box-shadow: 0px 0px 3px rgb(0, 0, 0);
+}
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* Footer. */
+footer{
+    background-color: #000000;
+    color: white;
+    font-size: 1.5em;
+    padding: 1em;
+    text-align: center;
+    margin-top: 1em;
 }
