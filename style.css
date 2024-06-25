@@ -91,7 +91,7 @@ p{
 }
 
 /* /////////////////For Mobile///////////////// */
-@media only screen and (max-width:480px){
+@media only screen and (max-width:725px){
     #page_top {
         font-size: 0.75em;
         display: grid;
