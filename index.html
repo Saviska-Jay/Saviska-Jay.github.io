@@ -91,7 +91,7 @@
     <section id="skills">
 
         <h2>My Skills...</h2>
-        <div style="clear:both;"></div>
+
 
         <h3>Programming & Markup Languages That I Use...</h3>
 
@@ -260,11 +260,30 @@
 
     </section>
 
+    <!-- Celcius To Farenheit Converter -->
+    <section id="converter">
+
+        <h2>Just try this °C to °F converter...</h2>
+
+        <div class="converter">
+            <h3><u>Enter a value to calculate °C to °F </u></h3>
+            <h3><label class="converter_label" for="C">Celcius (°C) : </label>
+            <input type="number" id="C">
+            <br>
+            <button class="projects_button converter_button" onclick="Convert()"> Convert </button>
+            <br>
+            <span id="result"></span>
+        </h3>
+
+        </div>
+
+    </section>
+
     <!-- Recommendations part of the page. -->
     <section id="recommendations">
 
         <h2>Recommendations...</h2>
-        <div style="clear:both;"></div>
+
 
         <div class="recommendations_grid">
 
@@ -337,6 +356,9 @@
             Made with ❤️
         </p>
     </footer>
+
+    <!-- Linking with JavaScript file. -->
+    <script src="script.js"></script>
 
 </body>
 

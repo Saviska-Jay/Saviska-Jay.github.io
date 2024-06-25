@@ -258,6 +258,47 @@ p{
     }
 }
 
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* Converter Part of the page. */
+#converter{
+    padding-top: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.converter{
+    width: 50%;
+    border: 5px solid rgb(0, 142, 142);
+    border-radius: 1em;
+    text-align: center;
+
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.converter_button{
+    margin: 1em;
+    padding: 0.5em;
+    background-color: rgb(0, 119, 119);
+}
+
+.converter_button:hover{
+    background-color: rgb(0, 195, 192);
+}
+
+.converter_button:active{
+    background-color: rgb(0, 85, 83);
+}
+
+input {
+    font-size: 1em;
+    width: 30%;
+    padding: 0.5em;
+    margin: 1em;
+    border: 3px solid rgb(85, 129, 129);
+    border-radius: 0.75em;
+    box-sizing: border-box;}
 
 /* ////////////////////////////////////////////////////////////////////////// */
 
@@ -313,7 +354,7 @@ p{
 .up_icon {
     display: flex;
     position: fixed;
-    width: 2em;
+    width: 3em;
     background-color: #245f73c4;
     border: 10px solid #245f7352;
     border-radius: 100%;
