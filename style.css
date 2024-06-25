@@ -221,6 +221,10 @@ p{
 .projects_cards .projects_source_button{
     text-align: center;
 }
+.projects_languages{
+    font-size: 1em;
+    color: #9d9d9d;
+}
 
 /* /////////////////For Desktop///////////////// */
 /* Projects Buttons */
