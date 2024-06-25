@@ -195,7 +195,7 @@ p{
 .poject_grid{
     display: grid;
     grid-template-rows: 1fr;
-    grid-gap: 25px;
+    grid-gap: 50px;
 }
 .projects_cards{
     background-color: #eaf4ff;
@@ -271,7 +271,7 @@ p{
 .recommendations_grid{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
-    grid-gap: 25px;
+    grid-gap: 40px;
 }
 .recommendations_card{
     background-color: #eaf4ff;
