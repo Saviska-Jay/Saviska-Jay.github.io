@@ -213,7 +213,7 @@ p{
 .projects_cards h5{
     color: #009619;
     font-family: monospace;
-    font-size: 1em;
+    font-size: 0.75em;
 }
 .projects_cards .in_development {
     color: #cb5800;
@@ -227,7 +227,7 @@ p{
 .projects_button{
     display: inline-flex;
     border:none;
-    margin-right: 1em;
+    margin-right: 1.5em;
     background-color: rgb(0, 96, 192);
     font-family: "Marcellus", serif;
     font-size: 1.2em;
