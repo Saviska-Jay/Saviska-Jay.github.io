@@ -213,7 +213,7 @@ p{
 .projects_cards h5{
     color: #009619;
     font-family: monospace;
-    font-size: large;
+    font-size: 1em;
 }
 .projects_cards .in_development {
     color: #cb5800;
@@ -222,6 +222,7 @@ p{
     text-align: center;
 }
 
+/* /////////////////For Desktop///////////////// */
 /* Projects Buttons */
 .projects_button{
     display: inline-flex;
@@ -229,7 +230,7 @@ p{
     margin-right: 1em;
     background-color: rgb(0, 96, 192);
     font-family: "Marcellus", serif;
-    font-size: 1em;
+    font-size: 1.2em;
     color: white;
     padding: 1em;
     border-radius: 2em;
@@ -244,6 +245,15 @@ p{
 .projects_button:active{
     background-color: rgb(0, 78, 155);
 }
+
+/* /////////////////For Mobile///////////////// */
+@media only screen and (max-width:725px){
+    .projects_button{
+        font-size: 2em;
+        margin: 10px;
+    }
+}
+
 
 /* ////////////////////////////////////////////////////////////////////////// */
 
