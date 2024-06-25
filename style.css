@@ -15,7 +15,6 @@ h2 {
     font-size: 3em;
     text-shadow: 0px 0px 4px #73b4ff;
 }
-
 h3{
     font-size: 1.5em;
 }
@@ -27,6 +26,7 @@ p{
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////// */
 
+/* //////////////////For Desktop ///////////////// */
 /* Top of the page. */
 #page_top {
     font-family: "Montserrat", sans-serif;
@@ -89,6 +89,18 @@ p{
     text-shadow: 2px 2px 5px rgb(121, 215, 255);
     cursor: pointer;
 }
+
+/* /////////////////For Mobile///////////////// */
+@media only screen and (max-width:480px){
+    #page_top {
+        font-size: 0.75em;
+        display: grid;
+    }
+    #nav_bar_div {
+        font-size: 2em;
+    }
+}
+
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////// */
 
