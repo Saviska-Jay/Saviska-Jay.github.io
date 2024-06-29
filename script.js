@@ -8,6 +8,6 @@ function Convert() {
         document.getElementById("C").focus;
     }
     else {
-        result.innerHTML =" " + Celsius + " °C = " +  "<mark>" + Farenheit +" &nbsp °F </mark> <br>"
+        result.innerHTML = " " + Celsius + " °C = " + "<mark>" + Farenheit + " &nbsp °F </mark> <br>"
     }
 }
