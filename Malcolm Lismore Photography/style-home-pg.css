@@ -8,7 +8,9 @@ body {
     font-style: normal;
     margin: 0;
 }
-h1, h2 {
+
+h1,
+h2 {
     font-family: "Tangerine";
     font-weight: 800;
     font-style: normal;
@@ -16,7 +18,7 @@ h1, h2 {
 }
 
 /*//////////////////////////////////////////////// Web Page Logo //////////////////////////////////////////////// */
-.page-logo-img{
+.page-logo-img {
     width: 20%;
     display: block;
     justify-content: center;
@@ -53,6 +55,7 @@ h1, h2 {
     color: rgb(255, 229, 112);
     text-shadow: 1px 1px 15px rgb(253, 255, 208);
 }
+
 .navigation-bar-items:active {
     margin: 1em;
     color: rgb(255, 255, 255);
@@ -64,14 +67,21 @@ h1, h2 {
     width: 100%;
     background-color: black;
     padding: 2em;
-  }
+}
 
-  /*//////////////////////////////////////////////// Page Head //////////////////////////////////////////////// */
-  .page-head {
+/*//////////////////////////////////////////////// Page Head //////////////////////////////////////////////// */
+.page-head {
     background-image: url(resources/cam-lens-bg-pic.jpg);
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     text-align: center;
     padding: 10%;
     font-size: 150%;
+    text-shadow: 0px 0px 10px rgb(255, 234, 0);
+}
+
+#motto {
+    font-weight: 900;
+    font-style: italic;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
