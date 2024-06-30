@@ -44,13 +44,10 @@ h2 {
     font-size: 1.5em;
     padding-left: 2em;
     padding-right: 2em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    border-radius: 1em;
+
 }
 
 .navigation-bar-items:hover {
-    background-color: rgb(49, 46, 0);
     text-decoration: underline;
     color: rgb(255, 229, 112);
     text-shadow: 1px 1px 15px rgb(253, 255, 208);
@@ -66,7 +63,7 @@ h2 {
     top: 0;
     width: 100%;
     background-color: black;
-    padding: 2em;
+
 }
 
 /*//////////////////////////////////////////////// Page Head //////////////////////////////////////////////// */
@@ -77,11 +74,11 @@ h2 {
     text-align: center;
     padding: 10%;
     font-size: 150%;
+    font-weight: 900;
     text-shadow: 0px 0px 10px rgb(255, 234, 0);
 }
 
 #motto {
-    font-weight: 900;
+    font-weight: 500;
     font-style: italic;
-    text-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
