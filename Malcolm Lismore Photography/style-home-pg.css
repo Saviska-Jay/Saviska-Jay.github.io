@@ -8,13 +8,43 @@ body {
     font-style: normal;
     margin: 0;
 }
-
 h1,
 h2 {
     font-family: "Tangerine";
     font-weight: 800;
     font-style: normal;
     font-size: 3em;
+}
+h2{
+    margin: 1em;
+}
+a{
+    text-decoration: none;
+}
+.my-button{
+    text-decoration: none;
+    display: flex;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(184, 150, 0);
+    font-family: "Josefin Sans";
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 2em;
+    cursor: pointer;
+}
+.my-button:hover{
+    background-color:  rgb(255, 208, 0);
+    box-shadow: 0px 0px 15px rgb(253, 255, 208);
+    color: rgb(52, 47, 0);
+}
+.my-button:active{
+    background-color:  rgb(116, 94, 0);
 }
 
 /*//////////////////////////////////////////////// Web Page Logo //////////////////////////////////////////////// */
@@ -37,36 +67,31 @@ h2 {
     margin-right: auto;
     padding: 1em;
 }
-
 .navigation-bar-items {
     text-decoration: none;
     color: rgb(255, 219, 60);
     font-size: 1.5em;
     padding-left: 2em;
     padding-right: 2em;
-
 }
-
 .navigation-bar-items:hover {
     text-decoration: underline;
     color: rgb(255, 229, 112);
     text-shadow: 1px 1px 15px rgb(253, 255, 208);
 }
-
 .navigation-bar-items:active {
     margin: 1em;
     color: rgb(255, 255, 255);
 }
-
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: black;
-
 }
 
 /*//////////////////////////////////////////////// Page Head //////////////////////////////////////////////// */
+
 .page-head {
     background-image: url(resources/cam-lens-bg-pic.jpg);
     background-size: cover;
@@ -77,8 +102,34 @@ h2 {
     font-weight: 900;
     text-shadow: 0px 0px 10px rgb(255, 234, 0);
 }
-
 #motto {
     font-weight: 500;
     font-style: italic;
+}
+
+/*//////////////////////////////////////////////// Gallery preview section //////////////////////////////////////////////// */
+
+.gallery-cards-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+    grid-gap: 20px;
+    padding: 1em;
+}
+.gallery-card{
+    background-color: rgb(72, 69, 43);
+    border-radius: 1.5em;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+.gallery-card:hover{
+    background-color: rgb(118, 113, 71);
+}
+.gallery-card>img{
+    width: 100%;
+    border-radius: 1.5em;
+    transition: all 0.4s;
+}
+.gallery-card>img:hover{
+    transform: scale(1.1);
 }
