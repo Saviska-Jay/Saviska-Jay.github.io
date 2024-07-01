@@ -17,6 +17,10 @@ h2 {
 }
 h2{
     margin: 1em;
+    text-decoration: underline;
+}
+p{
+    font-size: 1.4em;
 }
 a{
     text-decoration: none;
@@ -132,4 +136,23 @@ a{
 }
 .gallery-card>img:hover{
     transform: scale(1.1);
+}
+
+/*//////////////////////////////////////////////// About Me Preview Section //////////////////////////////////////////////// */
+
+.about-me-preview-area{
+    display: flex;
+    border: none;
+    margin: 1em;
+    padding: 1em;
+    align-items: center;
+    background-color: rgb(72, 69, 43);
+    border-radius: 2em;
+
+}
+.about-me-preview-area> img{
+    width: 30%;
+    float: left;
+    border-radius: 100%;
+    padding: 1em;
 }
