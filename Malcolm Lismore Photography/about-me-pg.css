@@ -1,0 +1,61 @@
+/*//////////////////////////////////////////////// Base Style //////////////////////////////////////////////// */
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+h1{
+    font-family: "Tangerine";
+    font-style: normal;
+    font-size: 3em;
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 2em;
+}
+h3{
+    font-family: "Tangerine";
+    font-style: normal;
+    font-size: 3em;
+    margin: 1em;
+}
+
+p{
+    font-size: 1.5em;
+    margin: 1em;
+}
+a{
+    text-decoration: none;
+}
+
+/*//////////////////////////////////////////////// Navigation Bar //////////////////////////////////////////////// */
+
+.navigation-bar {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+.navigation-bar-items {
+    text-decoration: none;
+    color: rgb(255, 219, 60);
+    font-size: 1.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.navigation-bar-items:hover {
+    text-decoration: underline;
+    color: rgb(255, 229, 112);
+    text-shadow: 1px 1px 15px rgb(253, 255, 208);
+}
+.navigation-bar-items:active {
+    margin: 1em;
+    color: rgb(255, 255, 255);
+}
