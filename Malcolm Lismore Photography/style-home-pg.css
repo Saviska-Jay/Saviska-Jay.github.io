@@ -213,6 +213,7 @@ a{
     text-align: center;
 }
 .sub-email-input{
+    width: 50%;
     border-radius: 0.5em;
     font-size: 1.75em;
     border: none;
