@@ -1,0 +1,127 @@
+/*//////////////////////////////////////////////// Base Style //////////////////////////////////////////////// */
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+h1{
+    font-family: "Tangerine";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 3em;
+    padding-top: 1em;
+    text-align: center;
+    text-decoration: underline;
+}
+h3{
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.5em;
+}
+p{
+    font-size: 1.5em;
+}
+a{
+    text-decoration: none;
+}
+.my-button{
+    text-decoration: none;
+    display: flex;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(184, 150, 0);
+    font-family: "Josefin Sans";
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 2em;
+    cursor: pointer;
+}
+.my-button:hover{
+    background-color:  rgb(255, 208, 0);
+    box-shadow: 0px 0px 15px rgb(253, 255, 208);
+    color: rgb(52, 47, 0);
+}
+.my-button:active{
+    background-color:  rgb(116, 94, 0);
+}
+
+/*//////////////////////////////////////////////// Navigation Bar //////////////////////////////////////////////// */
+
+
+.navigation-bar {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    padding: 1em;
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+.navigation-bar-items {
+    text-decoration: none;
+    color: rgb(255, 219, 60);
+    font-size: 1.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.navigation-bar-items:hover {
+    text-decoration: underline;
+    color: rgb(255, 229, 112);
+    text-shadow: 1px 1px 15px rgb(253, 255, 208);
+}
+.navigation-bar-items:active {
+    margin: 1em;
+    color: rgb(255, 255, 255);
+}
+
+/*//////////////////////////////////////////////// Form //////////////////////////////////////////////// */
+.contact-me-section{
+    margin: 1em;
+}
+form{
+    background-color: rgb(72, 69, 43);
+    border-radius: 1.5em;
+    margin: 1em;
+    padding: 2em;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+input,textarea{
+    border: none;
+    border-radius: 0.5em;
+    font-family: "Josefin Sans";
+    font-size: 1.1em;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+#contact-form-email{
+    width: 50%;
+}
+textarea{
+    width: 92%;
+    margin: 1em;
+}
+label{
+    font-size: 1.5em;
+}
+/*////////////////////////////////////////////////Footer Section //////////////////////////////////////////////// */
+
+footer{
+    background-color: rgb(60, 60, 60);
+    margin-top: 5em;
+    padding: 1em;
+    bottom: 0;
+    text-align: center;
+}
