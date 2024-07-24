@@ -198,3 +198,55 @@ a{
     font-size: 1.75em;
     text-shadow: 1px 1px 15px rgb(0, 0, 0);
 }
+
+/*////////////////////////////////////////////////Subscribe Section //////////////////////////////////////////////// */
+
+.subscribe-info{
+    margin: 2em;
+}
+.subscribe-form{
+    border: none;
+    margin: 1em;
+    padding: 1em;
+    background-color: rgb(72, 69, 43);
+    border-radius: 2em;
+    text-align: center;
+}
+.sub-email-input{
+    border-radius: 0.5em;
+    font-size: 1.75em;
+    border: none;
+    padding: 0.5em;
+    margin: 0.5em;
+    font-family: "Josefin Sans";
+}
+.sub-button{
+    text-decoration: none;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(206, 134, 0);
+    font-family: "Josefin Sans";
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 2em;
+    cursor: pointer;
+}
+.sub-button:hover{
+    background-color:  rgb(255, 166, 0);
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    color: rgb(52, 47, 0);
+}
+
+/*////////////////////////////////////////////////Footer Section //////////////////////////////////////////////// */
+
+footer{
+    background-color: rgb(60, 60, 60);
+    margin-top: 5em;
+    padding: 1em;
+    text-align: center;
+}
