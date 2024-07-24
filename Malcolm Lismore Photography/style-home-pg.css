@@ -7,6 +7,7 @@ body {
     font-weight: 400;
     font-style: normal;
     margin: 0;
+
 }
 h1,
 h2 {
@@ -158,25 +159,42 @@ a{
 
 /*////////////////////////////////////////////////Packages & Prices Section  preview section //////////////////////////////////////////////// */
 
+
 .packages-prices-preview-cards-area{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
-    grid-gap: 20px;
+    grid-gap: 4em;
     padding: 1em;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
 }
 .packages-prices-card{
-    background-color: rgb(120, 118, 96);
+    background-color: rgb(118, 113, 71);
     border-radius: 1.5em;
     margin: 1em;
     padding: 1em;
     text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100%; 
 }
 .packages-prices-card:hover{
-    background-color: rgb(165, 159, 93);
+    background-color: rgb(152, 146, 92);
 }
 .select-package-button{
     background-color: rgb(206, 134, 0);
     box-shadow: 0px 0px 15px rgb(79, 78, 0);
+}
+.select-package-button:hover{
+    background-color:  rgb(255, 166, 0);
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    color: rgb(52, 47, 0);
+}
+.select-package-button:active{
+    background-color:  rgb(116, 94, 0);
+}
+.packages-prices-card>h3{
+    font-size: 1.75em;
+    text-shadow: 1px 1px 15px rgb(0, 0, 0);
 }
