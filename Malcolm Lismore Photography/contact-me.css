@@ -98,7 +98,7 @@ form{
     margin-left: auto;
     margin-right: auto;
 }
-input,textarea{
+input,textarea,select{
     border: none;
     border-radius: 0.5em;
     font-family: "Josefin Sans";
