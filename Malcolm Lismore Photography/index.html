@@ -23,40 +23,40 @@
 
     <!-- Linking With the Local CSS File  -->
     <link rel="stylesheet" type="text/css" href="style-home-pg.css">
-
 </head>
 
 <body>
     <header>
-
         <!-- This is the Logo  -->
         <img class="page-logo-img" src="resources/logo-black.png" alt="Malcolm Lismore Photography Logo">
 
         <!-- This is The Navigation Bar -->
-        <div id="navigation-bar" class="navigation-bar">
-            <nav>
-                <a href="index.html" class="navigation-bar-items">Home</a>
-                <a href="about-me.html" class="navigation-bar-items">About Me</a>
-                <a href="gallery-1.html" class="navigation-bar-items">Gallery</a>
-                <a href="packages-prices-pg.html" class="navigation-bar-items">Packages & Prices</a>
-                <a href="contact-me.html" class="navigation-bar-items">Contact Me</a>
-            </nav>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+             <h1>&#9776;</h1>
         </div>
+
+        <nav id="navigation-bar" class="navigation-bar">
+            <ul id="nav-links">
+                <li><a href="index.html" class="navigation-bar-items">Home</a></li>
+                <li><a href="about-me.html" class="navigation-bar-items">About Me</a></li>
+                <li><a href="gallery-1.html" class="navigation-bar-items">Gallery</a></li>
+                <li><a href="packages-prices-pg.html" class="navigation-bar-items">Packages & Prices</a></li>
+                <li><a href="contact-me.php" class="navigation-bar-items">Contact Me</a></li>
+            </ul>
+        </nav>
 
         <!-- This is the page Head  -->
         <div class="page-head">
             <h1>Malcolm Lismore Photography</h1>
             <p id="motto">Capturing Emotions Through the Lens...</p>
         </div>
-
     </header>
 
     <!-- This is the Gallery preview section  -->
     <section class="gallery-preview-section">
-
         <!-- Section Title  -->
         <h2>My Best Shots...</h2>
-
         <!-- Photos as Cards  -->
         <div class="gallery-cards-area">
 
@@ -70,7 +70,6 @@
                 <p class="gallery-card-info">Here are some Classic and Elegant Moments from My Clients' Wedding Days...
                 </p>
             </div>
-
             <div class="gallery-card">
                 <img class="gallery-preview-slideshow2 animate-fading" src="resources/Graduation/GratuationPic1.jpg"
                     alt="Image 2.1">
@@ -81,7 +80,6 @@
                 <p class="gallery-card-info">Here are some Proud and Memorable Moments from My Clients' Graduation
                     Days...</p>
             </div>
-
             <div class="gallery-card">
                 <img class="gallery-preview-slideshow3 animate-fading" src="resources/wildlife/WidelifePic1.jpeg"
                     alt="Image 3.1">
@@ -117,7 +115,8 @@
                 </p>
 
                 <!-- Read more about me button  -->
-                <a href="about-me.html"><button class="my-button read-more-about-me-button">Read More About Me</button></a>
+                <a href="about-me.html"><button class="my-button read-more-about-me-button">Read More About
+                        Me</button></a>
 
             </div>
         </div>
@@ -128,9 +127,7 @@
 
         <!-- Section Title  -->
         <h2>Packages & Prices...</h2>
-
         <div class="packages-prices-preview-cards-area">
-
             <!-- Packages as Cards  -->
             <div class="packages-prices-card">
                 <h3 class="package-name">Wedding Bliss Package</h3>
@@ -143,7 +140,6 @@
                 </p>
                 <a href="contact-me.html"><button class="my-button select-package-button">Select</button></a>
             </div>
-
             <div class="packages-prices-card">
                 <h3 class="package-name">Graduation Memories Package</h3>
                 <h4 class="package-price"> USD 250</h4>
@@ -154,7 +150,6 @@
                 </p>
                 <a href="contact-me.html"><button class="my-button select-package-button">Select</button></a>
             </div>
-
             <div class="packages-prices-card">
                 <h3 class="package-name">Portrait Perfection Package</h3>
                 <h4 class="package-price"> USD 100</h4>
@@ -165,13 +160,13 @@
                 </p>
                 <a href="contact-me.html"><button class="my-button select-package-button">Select</button></a>
             </div>
-
         </div>
         <br><br><br><br><br>
 
         <!-- Browse more Packages button  -->
         <a href="packages-prices-pg.html"><button class="my-button more-packages-button">More Packages</button></a>
     </section>
+
 
     <!-- Subscribe Section  -->
     <section class="subscribe-section">
@@ -184,10 +179,10 @@
             </p>
 
             <!-- Subscribe Form  -->
-            <form class="sub-form-items">
+            <form method="post" action="Subscribe-Form.php" class="sub-form-items">
 
-                <input required class="sub-email-input" type="email" id="sub-email">
-                <button type="submit" class="sub-button" id="sub-button">Subscribe</button>
+                <input required class="sub-email-input" type="email" id="sub_email" name="sub_email">
+                <input class="sub-button" type="submit" value="Submit">
 
             </form>
         </div>
@@ -197,9 +192,12 @@
     <footer>
         <p class="footer-text">© Malcolm Lismore - 2024</p>
         <p class="footer-text">Developed By Saviska Jayawickrama</p>
-        <p class="footer-text"><a href="https://saviska-jay.github.io/" ><img src="https://i.pinimg.com/originals/b0/f6/9b/b0f69bc06598a0cbb29c0e6d771aef4a.gif" width="10%"></a></p>
+        <p class="footer-text"><a href="https://saviska-jay.github.io/"><img
+                    src="https://i.pinimg.com/originals/b0/f6/9b/b0f69bc06598a0cbb29c0e6d771aef4a.gif" width="10%"></a>
+        </p>
 
     </footer>
+
 
     <!-- Linking With the JavaScript File  -->
     <script src="common.js">Lorem</script>

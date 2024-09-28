@@ -81,8 +81,6 @@ p{
 }
 
 /*////////////////////////////////////////////////Packages & Prices Section  preview section //////////////////////////////////////////////// */
-
-
 .packages-prices-preview-cards-area{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
@@ -100,8 +98,7 @@ p{
     display: flex; 
     flex-direction: column; 
     justify-content: space-between; 
-    height: 100%; 
-}
+    height: 100%; }
 .packages-prices-card:hover{
     background-color: rgb(152, 146, 92);
 }

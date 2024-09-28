@@ -53,6 +53,8 @@ p{
     color: rgb(255, 255, 255);
 }
 
+
+
 /*//////////////////////////////////////////////// Gallery //////////////////////////////////////////////// */
 .container{
     display: flex;
@@ -60,21 +62,17 @@ p{
     justify-content: center;
     grid-gap: 2em;
 }
-
 img{
     width: 500px;
     height: 350px;
     margin: 10px;
     transition: all 0.4s;
 }
-
 img:hover{
     transform: scale(1.1);
     box-shadow: 4px 4px 10px rgb(255, 221, 0);
 }
-
 /*//////////////////////////////////////////////// Discover More Photos Buttons //////////////////////////////////////////////// */
-
 .my-button{
     text-decoration: none;
     display: flex;

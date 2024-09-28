@@ -9,8 +9,7 @@ body {
     margin: 0;
 
 }
-h1,
-h2 {
+h1,h2 {
     font-family: "Tangerine";
     font-weight: 800;
     font-style: normal;
@@ -53,6 +52,7 @@ a{
 }
 
 /*//////////////////////////////////////////////// Web Page Logo //////////////////////////////////////////////// */
+
 .page-logo-img {
     width: 20%;
     display: block;
@@ -62,8 +62,7 @@ a{
     padding: 1.5em;
     padding-bottom: 1em;
 }
-
-/*//////////////////////////////////////////////// Navigation Bar //////////////////////////////////////////////// */
+/*//////////////////////////////////////////////// Navigation Bar - DeskTop //////////////////////////////////////////////// */
 
 .navigation-bar {
     display: flex;
@@ -72,6 +71,18 @@ a{
     margin-right: auto;
     padding: 1em;
 }
+
+ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    margin-right: 1em;
+}
+
 .navigation-bar-items {
     text-decoration: none;
     color: rgb(255, 219, 60);
@@ -79,21 +90,64 @@ a{
     padding-left: 2em;
     padding-right: 2em;
 }
+
 .navigation-bar-items:hover {
     text-decoration: underline;
     color: rgb(255, 229, 112);
     text-shadow: 1px 1px 15px rgb(253, 255, 208);
 }
+
 .navigation-bar-items:active {
     margin: 1em;
     color: rgb(255, 255, 255);
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: black;
+
+@media screen and (min-width: 769px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: black;
+    }
+    
 }
+
+/* //////////////////////////////////////////////////////// Mobile Styles //////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        display: none; 
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        color: rgb(255, 219, 60);
+
+    }
+    .menu-icon:active{
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    }
+
+    li {
+        margin: 1em 0;
+    }
+
+    ul.show {
+        display: flex;
+    }
+}
+
 
 /*//////////////////////////////////////////////// Page Head //////////////////////////////////////////////// */
 

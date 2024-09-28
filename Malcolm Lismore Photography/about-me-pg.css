@@ -21,10 +21,13 @@ h3{
     font-style: normal;
     font-size: 3em;
     margin: 1em;
+    text-align: center;
 }
 p{
     font-size: 1.5em;
     margin: 1em;
+    margin-left: 15em;
+    margin-right: 15em;
 }
 a{
     text-decoration: none;
@@ -58,6 +61,8 @@ a{
     margin: 1em;
     color: rgb(255, 255, 255);
 }
+
+
 
 /*////////////////////////////////////////////////Image //////////////////////////////////////////////// */
 

@@ -44,17 +44,17 @@
     <section class="contact-me-section">
         <h1>Contact Me</h1>
         <h3>Contact us and purchase your package. Fill out the fields and click the submit button.</h3>
-        <form method="post" action="Contact-me.php">
+        <form method="post" action="">
             <label for="first-name">First Name : </label>
-            <input type="text" id="first-name" name="first-name">&nbsp; &nbsp;
+            <input required type="text" id="first-name" name="first-name">&nbsp; &nbsp;
             <label for="last-name">Last Name : </label>
-            <input type="text" id="last-name" name="last-name"> <br><br><br>
+            <input required type="text" id="last-name" name="last-name"> <br><br><br>
             <label for="tel-no">Telephone Number : </label>
-            <input type="tel" id="tel-no" name="tel-no"> <br><br><br>
+            <input required type="tel" id="tel-no" name="tel-no"> <br><br><br>
             <label for="contact-form-email">Email Address : </label>
-            <input type="email" id="contact-form-email" name="contact-form-email"><br><br><br>
+            <input required type="email" id="contact-form-email" name="contact-form-email"><br><br><br>
             <label for="package-list">Select Your Package : </label>
-            <select id="package-list" name="package-list">
+            <select required id="package-list" name="package-list">
                 <option value="Wedding Bliss Package - USD 500">Wedding Bliss Package - USD 500</option>
                 <option value="Graduation Memories Package - USD 250">Graduation Memories Package - USD 250</option>
                 <option value="Portrait Perfection Package - USD 100">Portrait Perfection Package - USD 100</option>
@@ -63,19 +63,70 @@
                 <option value="Nature's Beauty Package - USD 300">Nature's Beauty Package - USD 300</option>
             </select><br><br><br>
             <label for="msg">Type Your Message Here : </label><br>
-            <textarea  id="msg" name="msg" rows="10" ></textarea><br><br><br>
+            <textarea id="msg" name="msg" rows="10"></textarea><br><br><br>
             <input class="my-button" type="submit" value="Submit">
         </form>
     </section>
 
-        <!-- Footer Section  -->
-        <footer>
-            <p class="footer-text">© Malcolm Lismore - 2024</p>
-            <p class="footer-text">Developed By Saviska Jayawickrama</p>
-            <p class="footer-text"><a href="https://saviska-jay.github.io/" ><img src="https://i.pinimg.com/originals/b0/f6/9b/b0f69bc06598a0cbb29c0e6d771aef4a.gif" width="10%"></a></p>
+    <!-- Footer Section  -->
+    <footer>
+        <p class="footer-text">© Malcolm Lismore - 2024</p>
+        <p class="footer-text">Developed By Saviska Jayawickrama</p>
+        <p class="footer-text"><a href="https://saviska-jay.github.io/"><img
+                    src="https://i.pinimg.com/originals/b0/f6/9b/b0f69bc06598a0cbb29c0e6d771aef4a.gif" width="5%"></a>
+        </p>
 
 
-        </footer>
+    </footer>
+
+
+    
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Database configuration
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "malcolm_lismore_photography_db_saviska";
+        // Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+        // Get form data
+        $first_name = $_POST['first-name'];
+        $last_name = $_POST['last-name'];
+        $tel_no = $_POST['tel-no'];
+        $email = $_POST['contact-form-email'];
+        $package = $_POST['package-list'];
+        $message = $_POST['msg'];
+        // Prepare and bind
+        $stmt = $conn->prepare("INSERT INTO contact_me_form_table (first_name, last_name, tel_no, email, package, message) VALUES (?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("ssssss", $first_name, $last_name, $tel_no, $email, $package, $message);
+        // Execute statement
+        if ($stmt->execute()) {
+            $success = true;
+        } else {
+            $success = false;
+        }
+        // Close connection
+        $stmt->close();
+        $conn->close();
+    }
+    ?>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            <?php if ($success) { ?>
+                alert("Contact form submitted successfully.");
+            <?php } else { ?>
+                alert("Error occurred during submission!");
+            <?php } ?>
+        });
+    </script>
+
 </body>
 
 </html>
